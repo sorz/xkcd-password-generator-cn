@@ -4,7 +4,7 @@ const NUM_PHRASE = 4;
 let dict = null;
 
 async function loadDict(url) {
-  const resp = await fetch("dict.txt");
+  const resp = await fetch(url);
   const text = await resp.text();
   return text.split('\n')
     .filter(s => s.includes('\t'))
@@ -16,11 +16,17 @@ async function loadDict(url) {
 }
 
 (async function () {
-  dict = await loadDict("dict.txt");
+  try {
+    dict = await loadDict("dict.txt");
+  } catch (e) {
+    alert("Fail to load dict: " + e);
+    return;
+  }
   console.log(`${dict.length} phrases loaded`);
   document.querySelectorAll('.num-phrases')
     .forEach(elm => elm.textContent = `${dict.length}`);
   generatePassphrase();
+  $('#generator').classList.remove('loading');
   $('#generate').disabled = false;
 })();
 

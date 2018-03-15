@@ -7,6 +7,7 @@ h1 span[lang=en] { color: #B2DFDB; font-size: 0.8em; }
 header { border-bottom: #00796B solid 1px; padding: 2em; background: #00897B; }
 
 #generator { text-align: center; padding: 2em 1em; }
+#generator.loading li { color: lightgray; }
 #phrases { list-style: none; }
 #phrases li { display: inline-block; margin-right: 0.5em; font-size: 1.8em;
   font-family: monospace; }
