@@ -1,5 +1,5 @@
 # xkcd-password-generator-cn
-The [xkcd Password Generator](https://github.com/sorz/xkcd-password-generator-cn)
+The [xkcd Password Generator](https://xkcd.com/936/)
 for Chinese.
 
 Four phrases are selected from a set of commonly-used Chinese phrases, and
