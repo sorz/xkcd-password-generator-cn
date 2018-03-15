@@ -639,6 +639,9 @@
 波及	boji
 奴婢	nubi
 爱惜	aixi
+巨幅	jufu
+语录	yulu
+庇护	bihu
 我们	women
 他们	tamen
 问题	wenti
@@ -2530,6 +2533,10 @@
 伴侣	banlv
 肥沃	feiwo
 划拨	huabo
+茄子	qiezi
+亏得	kuide
+轮子	lunzi
+未可	weike
 没有	meiyou
 已经	yijing
 这些	zhexie
@@ -5228,6 +5235,8 @@
 泪花	leihua
 通则	tongze
 咒骂	zhouma
+推倒	tuidao
+倒卖	daomai
 工作	gongzuo
 这样	zheyang
 现在	xianzai
@@ -7608,6 +7617,12 @@
 门缝	menfeng
 善待	shandai
 党群	dangqun
+炼油	lianyou
+年岁	niansui
+连载	lianzai
+盆景	penjing
+全套	quantao
+村寨	cunzhai
 中国	zhongguo
 生活	shenghuo
 重要	zhongyao
@@ -8944,3 +8959,6 @@
 宪兵	xianbing
 粗壮	cuzhuang
 反常	fanchang
+实况	shikuang
+房顶	fangding
+光临	guanglin
