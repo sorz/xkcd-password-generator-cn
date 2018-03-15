@@ -1,0 +1,20 @@
+body { margin: 0; }
+a:link { text-decoration: none; }
+a:hover {  text-decoration: underline; }
+h1 { font-size: 2em; margin: 0; color: white; }
+h1 small { color: #E0F2F1; }
+h1 span[lang=en] { color: #B2DFDB; font-size: 0.8em; }
+header { border-bottom: #00796B solid 1px; padding: 2em; background: #00897B; }
+
+#generator { text-align: center; padding: 2em 1em; }
+#phrases { list-style: none; }
+#phrases li { display: inline-block; margin-right: 0.5em; font-size: 1.8em;
+  font-family: monospace; }
+#phrases li::after { content: "\A" attr(data-hans); white-space: pre;
+  font-family: serif; font-size: 0.8em; }
+
+article { background: #E0F2F1; padding: 1.5em; width: 80%; margin: 0 auto;}
+article h2 { font-size: 1.4em; color: #004D40; margin-top: 1.5em; }
+article a:link { color: #00695C; }
+article a:visited { color: #004D40; }
+a.note { font-size: 0.6em; vertical-align: top; }

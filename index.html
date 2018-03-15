@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <meta charset="utf-8">
+    <title>xkcd 密码生成器（汉语拼音版）</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer async></script>
+  </head>
+  <body>
+    <header>
+      <h1>xkcd 密码生成器<small>（汉语拼音版）</small><br>
+        <span lang="en">xkcd Password Generator for Chinese</span>
+      </h1>
+    </header>
+    <form id="generator">
+      <ul id="phrases">
+        <li data-hans="正确">correct</li>
+        <li data-hans="马">horse</li>
+        <li data-hans="电池">battery</li>
+        <li data-hans="订书钉">staple</li>
+      </ul>
+      <button id="generate" disabled>换一组</button>
+      <template id="phrase"><li></li></template>
+    </form>
+    <article>
+      <p>又名「正确马电池订书钉密码生成器」，出自 <a href="https://xkcd.com/936/">xkcd 的一副漫画</a>。</p>
+      <p>这是汉语拼音版本，你可以直接使用上面显示的拼音作为你的密码。<p>
+      <p>这四个词是从 <span class="num-phrases">8900</span>
+        个汉语常用词组中随机挑选出来的。其密码强度<a class="note" href="#note-1">[1]</a>大致相当于 8
+        位随机生成的，包含大小写字母、数字和特殊符号<a class="note" href="#note-2">[2]</a>的密码（比如
+        <code>K#7%ol4e</code>）；强于 10 位的随机小写字母、数字混合密码（比如
+        <code>q7bukjpwr6</code>）。</p>
+      <p>最重要的一点，这种密码<strong>相当好记</strong>，可以<strong>经常更换</strong>而不至于一脑子乱码。</p>
+
+      <h2>词典组成</h2>
+      <p>生成器所用词语来自于《现代汉语常用词表》。具体来说，是<a href="https://gist.github.com/indiejoseph/eae09c673460aa0b56db"
+      title="现代汉语常用词表">这个 gist</a><a class="note" href="#note-3">[3]</a>。</p>
+      <p>但未使用全部的五万多个词组，而是先按照使用频率取了前 15,000
+        个<a class="note" href="#note-4">[4]</a>，然后再保留只由两个汉字组成、拼音长度不超过 8
+        个字母的词组。最总余下 <span class="num-phrases">8900</span>
+        个。</p>
+
+      <h2>安全性</h2>
+      <p>关于这种密码生成方案的讨论网上有很多，还请自行搜索了解<a class="note" href="#note-5">[5]</a>。</p>
+      <p>程序实现的细节请参考源码：<a title="GitHub: sorz/xkcd-password-generator-cn"
+        href="https://github.com/sorz/xkcd-password-generator-cn">sorz/xkcd-password-generator-cn</a></p>
+
+      <h2>脚注</h2>
+      <ol>
+        <li id="note-1">约为 52.5 比特的熵，比漫画中的 44 比特高一些。不过如果只挑「顺眼的」用，可能会有些许降低；</li>
+        <li id="note-2">包括我键盘上能敲出来的 32 个特殊符号；</li>
+        <li id="note-3">我也不知道这个 gist 是不是就是那本《常用词表》，不过看起来挺像；</li>
+        <li id="note-4">后面那些自己都没见过的词就不去背啦，不过这个排序看起来并不是特别靠谱？</li>
+        <li id="note-5">欢迎在此处补充链接或文字介绍，欢迎<a
+          href="https://github.com/sorz/xkcd-password-generator-cn">提交 Pull Request</a>。</li>
+      </ol>
+    </article>
+  </body>
+</html>
