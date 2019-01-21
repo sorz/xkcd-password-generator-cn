@@ -768,7 +768,7 @@
 恢复	huifu
 属于	shuyu
 满足	manzu
-自然	Ziran
+自然	ziran
 投资	touzi
 法国	faguo
 过去	guoqu
@@ -1238,7 +1238,6 @@
 帽子	maozi
 规矩	guiju
 厕所	cesuo
-自然	ziran
 细致	xizhi
 学历	xueli
 海域	haiyu
@@ -8962,3 +8961,4 @@
 实况	shikuang
 房顶	fangding
 光临	guanglin
+焦灼	jiaozhuo
